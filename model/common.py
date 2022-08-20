@@ -30,7 +30,7 @@ class BasicBlock(nn.Sequential):
         bn=True, act=nn.ReLU(True)):
 
         m = [conv(in_channels, out_channels, kernel_size, bias=bias)]
-        if bn:
+        if bn:model
             m.append(nn.BatchNorm2d(out_channels))
         if act is not None:
             m.append(act)
